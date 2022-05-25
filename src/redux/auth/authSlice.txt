@@ -1,0 +1,33 @@
+import { createSlice } from '@reduxjs/toolkit';
+import { registerUser } from './authOperations';
+
+const authSlice = createSlice({
+  name: 'auth',
+  initialState: {
+    email: '',
+    idToken: null,
+    localId: null,
+    error: null,
+  },
+  reducers: {
+    initialReducer(state, action) {
+      return state;
+    },
+  },
+  extraReducers: {
+    [registerUser.pending]: state => {
+      state.isLoading = true;
+    },
+    [registerUser.fulfilled]: (state, { payload }) => {
+      const { email, idToken, localId } = payload;
+      state.email = email;
+      state.idToken = idToken;
+      state.localId = localId;
+    },
+    [registerUser.rejected]: (state, action) => {
+      state.error = action.payload;
+    },
+  },
+});
+console.log('authSlice: ', authSlice);
+export default authSlice.reducer;
