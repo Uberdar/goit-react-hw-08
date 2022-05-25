@@ -35,7 +35,7 @@ export default function Login() {
 
   return (
     <>
-      <h1>Login</h1>
+      <h1 className="loginheader">Login</h1>
       <form className="addinfo_div" onSubmit={handleSubmit} autoComplete="off">
         <label htmlFor={firstFormNameId}>
           Login

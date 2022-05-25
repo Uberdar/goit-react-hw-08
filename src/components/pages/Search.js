@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { filterAction } from 'redux/contacts/contactsActions';
 import { getFilters } from 'redux/contacts/contactsSelectors';
+import './Search.css';
 
 export default function Search() {
   const filter = useSelector(getFilters);
@@ -10,7 +11,15 @@ export default function Search() {
   };
   return (
     <>
-      <input type="text" value={filter} onChange={handleSearchChange} />
+      <h5 className="searchBarHeader">Search</h5>
+      <div className="searchbar_wrapper">
+        <input
+          type="text"
+          className="searchbar"
+          value={filter}
+          onChange={handleSearchChange}
+        />
+      </div>
     </>
   );
 }

@@ -37,7 +37,7 @@ export default function Phonebook() {
 
   return (
     <>
-      <h1>Add New Contact</h1>
+      <h1 className="contactHeader">Add New Contact</h1>
       <form className="addinfo_div" onSubmit={handleSubmit} autoComplete="off">
         <label htmlFor={firstFormNameId}>
           Name

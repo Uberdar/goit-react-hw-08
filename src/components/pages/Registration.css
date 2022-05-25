@@ -1,0 +1,61 @@
+.regheader,
+.loginheader,
+.contactHeader {
+  text-align: center;
+}
+.addinfo_div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  width: 400px;
+  height: 200px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.addinfo_div label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+}
+.add_btn {
+  margin-top: 15px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.addinfo_div:hover {
+  background: #2ee59d;
+  border: 2px solid #2ee59d;
+}
+
+.addinfo_div label input {
+  outline: none;
+  border-radius: 5px;
+}

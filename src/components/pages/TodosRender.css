@@ -1,0 +1,38 @@
+.contactsButton {
+  margin-top: 15px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+}
+
+.contactsButton:hover {
+  background: #2ee59d;
+  border: 1px solid #2ee59d;
+}
+.contactsLineWrapper {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.contactsClass {
+  text-align: center;
+}

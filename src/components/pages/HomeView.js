@@ -1,7 +1,8 @@
+import './HomeView.css';
 export default function HomeView() {
   return (
     <>
-      <p>Home page</p>
+      <div className="welcomeHome">Welcome at home page!</div>
     </>
   );
 }

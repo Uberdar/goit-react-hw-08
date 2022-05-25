@@ -2,6 +2,7 @@ import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { registerUser } from 'redux/auth/authOperations';
+import './Registration.css';
 
 export default function Registration() {
   //   const contacts = useSelector(state => state.contacts.items);
@@ -40,7 +41,7 @@ export default function Registration() {
 
   return (
     <>
-      <h1>Registration</h1>
+      <h1 className="regheader">Registration</h1>
       <form className="addinfo_div" onSubmit={handleSubmit} autoComplete="off">
         <label htmlFor={regFormNameId}>
           Name

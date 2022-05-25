@@ -1,0 +1,20 @@
+.welcomeHome {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 92px;
+  width: 200px;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.welcomeHome:hover {
+  background: #2ee59d;
+  border: 1px solid #2ee59d;
+}

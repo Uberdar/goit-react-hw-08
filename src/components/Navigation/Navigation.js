@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { logOutUser } from 'redux/auth/authOperations';
 import { getLoggedIn, getUsername } from 'redux/auth/authSelectors';
+import './navclass.css';
 
 export default function Navigation() {
   const isLoggedIn = useSelector(getLoggedIn);
@@ -11,12 +12,14 @@ export default function Navigation() {
     dispatch(logOutUser());
   };
   return (
-    <nav>
+    <nav className="navclass">
       <NavLink to="/">Main</NavLink>
       {isLoggedIn ? (
         <>
-          <h3>Hello User {username}</h3>
-          <button onClick={logoOutHandler}> Logout button </button>
+          <h3 className="helloUser">Hello User {username}</h3>
+          <button className="logoutButton" onClick={logoOutHandler}>
+            Logout
+          </button>
           <NavLink to="/contacts"> Contacts </NavLink>
         </>
       ) : (
